@@ -9,6 +9,9 @@
     <meta name="keywords" content="Troubleshooting, 3D Print problems,">
     <title>SimplyPrint Troubleshooting</title>
     <link rel="stylesheet" href="style.css">
+    <!-- icon libary -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -25,33 +28,53 @@
 
     <!-- 3D Print problemerne -->
     <section class="troubles">
-        <div class="problem">
-            <img src="" alt="">
+        <div class="troublesContainer">
             <h4>Spaghetti</h4>
+            <img src="" alt="x">
         </div>
-        <div class="problem">
-            <img src="" alt="">
+        <div class="troublesContainer">
             <h4>Spaghetti</h4>
+            <img src="" alt="x">
         </div>
-        <div class="problem">
-            <img src="" alt="">
+        <div class="troublesContainer">
             <h4>Spaghetti</h4>
-        <div class="problem">
-            <img src="" alt="">
-            <h4>Spaghetti</h4>
+            <img src="" alt="x">
         </div>
-        <div class="problem">
-            <img src="" alt="">
+        <div class="troublesContainer">
             <h4>Spaghetti</h4>
+            <img src="" alt="x">
         </div>
-        <div class="problem">
-            <img src="" alt="">
+        <div class="troublesContainer">
             <h4>Spaghetti</h4>
+            <img src="" alt="x">
+        </div>
+        <div class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="" alt="x">
+        </div>
+        <div class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="" alt="x">
+        </div>
+        <div class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="" alt="x">
         </div>
     </section>
 
     <section class="faq">
         <h2>FAQ</h2>
+        <button onclick="myFunction" class="faqContainer">
+            <h3>Er det normalt..?</h3>
+            <!-- find unicode hvis vi vil have den pil ned -->
+            <img src="" alt="arrow down">
+        </button>
+            <div class="faq-info">
+                <p>
+                    det er ikke normalt at...                    
+                </p>
+            </div>
+
         <div class="faqContainer">
             <h3>Er det normalt..?</h3>
             <!-- find unicode hvis vi vil have den pil ned -->
@@ -74,6 +97,7 @@
         </div>
     </section>
 
+    <!-- måske er det input i stedet. -->
     <section class="additionalQuestions">
         <form action="" aria-placeholder="Navn"></form>
         <form action="" aria-placeholder="Email"></form>
@@ -82,51 +106,55 @@
     </section>
 
 
-    <div class="soMe">
+    <section class="soMe">
         <h6>Try SimplyPrint today.</h6>
-        <a href="#"><img src="" alt="Facebook"></a>
-        <a href="#"><img src="" alt="Youtube"></a>
-        <a href="#"><img src="" alt="Twitter"></a>
-        <a href="#"><img src="" alt="Instagram"></a>
-        <a href="#"><img src="" alt="TikTok"></a>
-    </div>
+        <div>
+            <a href="#"><img src="" alt="Facebook"></a>
+            <a href="#"><img src="" alt="Youtube"></a>
+            <a href="#"><img src="" alt="Twitter"></a>
+            <a href="#"><img src="" alt="Instagram"></a>
+            <a href="#"><img src="" alt="TikTok"></a>
+        </div>
+    </section>
     <footer>
-        <div class="footerHeader">
-            <h3>SimplyPrint</h3>
-            <div>
-                <p>Her finder ud alt, du har brug for...</p>
+        <div class="footerCentering">
+            <div class="footerHeader">
+                <h3>SimplyPrint</h3>
+                <div>
+                    <p>Her finder ud alt, du har brug for...</p>
+                </div>
             </div>
-        </div>
-        <div class="footerHeader">
-            <h3>Partners</h3>
-            <div>
-                <p>Her finder ud alt, du har brug for...</p>
+            <div class="footerHeader">
+                <h3>Partners</h3>
+                <div>
+                    <p>Her finder ud alt, du har brug for...</p>
+                </div>
             </div>
-        </div>
-        <div class="footerHeader">
-            <h3>Legal Links</h3>
-            <div>
-                <p>Her finder ud alt, du har brug for...</p>
+            <div class="footerHeader">
+                <h3>Legal Links</h3>
+                <div>
+                    <p>Her finder ud alt, du har brug for...</p>
+                </div>
             </div>
-        </div>
-        <div class="footerHeader">
-            <h3>Kontakt</h3>
-            <div>
-                <!-- unicode icon af hus -->
-                <img src="" alt="">
-                <p>Her finder ud alt, du har brug for...</p>
+            <div class="footerHeader">
+                <h3>Kontakt</h3>
+                <div>
+                    <!-- unicode icon af hus -->
+                    <img src="" alt="">
+                    <p>Her finder ud alt, du har brug for...</p>
+                </div>
+                <div>
+                    <!-- unicode icon af brev -->
+                    <i class="fa fa-envelope">&#xf0e0;</i>
+                    <a href="">contact@simplyprint.io</a>
+                </div>
+                <div>
+                    <!-- unicode icon af telefon -->
+                    <img src="" alt="">
+                    <a href="">+45 49 40 87 77</a>
+                </div>
+                <p><b>VAT</b>: DK41306505</p>
             </div>
-            <div>
-                <!-- unicode icon af brev -->
-                <img src="" alt="">
-                <a href=""></a><p>contact@simplyprint.io</p></a>
-            </div>
-            <div>
-                <!-- unicode icon af telefon -->
-                <img src="" alt="">
-                <a href=""></a><p>+45 49 40 87 77</p></a>
-            </div>
-            <p><b>VAT</b>: DK41306505</p>
         </div>
     </footer>
     <div class="copyright">&copy; 2023; <span class="white-text">SimplyPrint ApS</span></div>

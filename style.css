@@ -5,15 +5,24 @@
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+:root{
+    --lightblue-color: #29abe2;
+    --deepblue-color: #1D30B8;
+    --borderRadius: 10px;
+}
 nav{
-    background-color: aqua;
+    background-image: linear-gradient(30deg, var(--lightblue-color), var(--deepblue-color));
     padding: 1em;
+}
+nav ul{
+    margin-top: 1em;
 }
 nav li{
     display: inline;
 }
 nav a{
     color: white;
+    margin: 1em;
 }
 nav header{
     text-align: center;
@@ -24,30 +33,78 @@ nav header h1{
     font-weight: bold;
     font-size: 30pt;
 }
-
+/* brugt i javascript */
+.show{display: block;}
 .troubles{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 2em 6vw;
+
+}
+.troublesContainer{
+    border: 1px solid black;
+    border-radius: var(--borderRadius);
+    padding: 100px;
+}
+.faq h2{font-size: 36pt;}
+.faq{
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+.faqContainer{
+    padding: 1.5em;
+    margin: 1em 0;
+    border: 1px solid black;
+    border-radius: var(--borderRadius);
+}
+.faq-info{
+    display: block;
 }
 
 .soMe{
-    background-color: lightskyblue;
+    background-color: #5991FB;
 }
-.soMe a{display: inline;}
+.soMe a{
+    display: inline;
+    margin-left: 2em;
+}
+.soMe h6{
+    color: white;
+}
 
 footer{
     display: flex;
+    font-weight: 300;
+}
+.footerCentering{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerHeader{
+    margin: 3em;
 }
 footer h3{
     text-decoration: underline;
+    text-decoration-color: var(--lightblue-color);
+    text-underline-offset: 1em;
     margin-bottom: 1.5em;
+    color: #4F4F4F;
+    font-weight: 600;
+}
+footer div {
+    margin: 1em 0;
+}
+footer div a{
+    color: var(--lightblue-color);
 }
 .copyright{
     font-size: 14pt;
     padding: 1em;
     text-align: center;
-    background-color: lightgray;
-    color: whitesmoke;
+    background-color: #BDBFC1;
+    color: #E2E2DE;
 }
 .copyright span{
     color: white;
