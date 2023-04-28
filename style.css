@@ -13,6 +13,7 @@
 nav{
     background-image: linear-gradient(30deg, var(--lightblue-color), var(--deepblue-color));
     padding: 1em;
+    font-size: 14pt;
 }
 nav ul{
     margin-top: 1em;
@@ -26,7 +27,8 @@ nav a{
 }
 nav header{
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
+    margin-bottom: 1.5em;
 }
 nav header h1{
     color: white;
@@ -37,15 +39,25 @@ nav header h1{
 .show{display: block;}
 .troubles{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 2em 6vw;
-
 }
 .troublesContainer{
-    border: 1px solid black;
+    background-color: white;
+    border: none;
+    margin: 1em;
+    /* border: 1px solid black; */
     border-radius: var(--borderRadius);
-    padding: 100px;
+    padding: 110px;
+    text-align: center;
+    font-size: 30pt;
+    box-shadow: 0 2px 10px #161c4b;
+}
+.troublesContainer h4{
+    position: relative;
+    transform: translateY(-1em);
+    font-weight: 600;
 }
 .faq h2{font-size: 36pt;}
 .faq{
@@ -64,6 +76,7 @@ nav header h1{
 
 .soMe{
     background-color: #5991FB;
+    margin-top: 3em;
 }
 .soMe a{
     display: inline;
@@ -81,6 +94,7 @@ footer{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    flex-wrap: wrap;
 }
 .footerHeader{
     margin: 3em;
@@ -108,4 +122,10 @@ footer div a{
 }
 .copyright span{
     color: white;
+}
+
+@media screen and (max-width:800px) {
+    .troublesContainer{
+        padding: 100px;
+    }
 }
