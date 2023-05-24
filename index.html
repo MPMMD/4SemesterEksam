@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- icon libary  -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -30,6 +29,92 @@
     
     <!-- 3D Print problemerne -->
     <section class="troubles">
+
+        <button id="lightbox-btn" class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="imgs/spaghetti.png" alt="">
+        </button>    
+
+        <div id="mylightbox" class="lightbox">
+
+            <div class="lightbox-content">
+                <span class="close">&times;</span>
+                <h3>Spaghetti</h3>
+                <div class="flex">
+                    <video src=""></video>
+                    <img src="imgs/spaghetti.png" alt="x">
+                </div>
+
+                <div class="info-tekst">
+                    <h4>Tjek varmen på print plade</h4>
+                    <p>De fleste 3D printere kommer efter hånden med en varmeplade.
+                        Denne funktion er vigtig for at print hænger fast på pladen, 
+                        da de fleste overflader som printere kommer med, 
+                        er designet til at holde fast på printet når den er varm, 
+                        og slippe når den er kold. Sørg for at din slicer sætter temperaturen
+                        i dens "start GCODE", og at din printer varmer pladen op før
+                        printer går i gang.</p>   
+                </div>
+            </div>
+        </div>
+
+        <button id="lightbox-btn-2" class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="imgs/spaghetti.png" alt="">
+        </button>    
+
+        <div id="mylightbox-2" class="lightbox">
+
+            <div class="lightbox-content">
+                <span class="close-2">&times;</span>
+                <h3>Spaghetti</h3>
+                <div class="flex">
+                    <video src=""></video>
+                    <img src="imgs/spaghetti.png" alt="x">
+                </div>
+
+                <div class="info-tekst">
+                    <h4>Tjek varmen på print plade</h4>
+                    <p>De fleste 3D printere kommer efter hånden med en varmeplade.
+                        Denne funktion er vigtig for at print hænger fast på pladen, 
+                        da de fleste overflader som printere kommer med, 
+                        er designet til at holde fast på printet når den er varm, 
+                        og slippe når den er kold. Sørg for at din slicer sætter temperaturen
+                        i dens "start GCODE", og at din printer varmer pladen op før
+                        printer går i gang.</p>   
+                </div>
+            </div>
+        </div>
+
+        <button id="lightbox-btn-3" class="troublesContainer">
+            <h4>Spaghetti</h4>
+            <img src="imgs/spaghetti.png" alt="">
+        </button>    
+
+        <div id="mylightbox-3" class="lightbox">
+
+            <div class="lightbox-content">
+                <span class="close-3">&times;</span>
+                <h3>Spaghetti</h3>
+                <div class="flex">
+                    <video src=""></video>
+                    <img src="imgs/spaghetti.png" alt="x">
+                </div>
+
+                <div class="info-tekst">
+                    <h4>Tjek varmen på print plade</h4>
+                    <p>De fleste 3D printere kommer efter hånden med en varmeplade.
+                        Denne funktion er vigtig for at print hænger fast på pladen, 
+                        da de fleste overflader som printere kommer med, 
+                        er designet til at holde fast på printet når den er varm, 
+                        og slippe når den er kold. Sørg for at din slicer sætter temperaturen
+                        i dens "start GCODE", og at din printer varmer pladen op før
+                        printer går i gang.</p>   
+                </div>
+            </div>
+        </div>
+
+
         <button class="troublesContainer">
             <h4>Spaghetti</h4>
             <img src="imgs/spaghetti.png" alt="x">
@@ -54,15 +139,12 @@
             <h4>Spaghetti</h4>
             <img src="imgs/spaghetti.png" alt="x">
         </button>
-        <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
-        </button>
-        <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
-        </button>
+
     </section>
+
+
+
+
 
     <section class="faq">
         <h2>FAQ</h2>
@@ -71,11 +153,6 @@
             <!-- find unicode hvis vi vil have den pil ned -->
             <img src="" alt="arrow down">
         </button>
-            <div class="faq-info">
-                <p>
-                    det er ikke normalt at...                    
-                </p>
-            </div>
 
         <div class="faqContainer">
             <h3>Er det normalt..?</h3>
@@ -159,6 +236,10 @@
             </div>
         </div>
     </footer>
-    <div class="copyright">&copy; 2023; <span class="white-text">SimplyPrint ApS</span></div>
+    <div class="copyright">
+        &copy; 2023; <span class="white-text">SimplyPrint ApS</span>
+    </div>
+    <script src="lightbox.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
