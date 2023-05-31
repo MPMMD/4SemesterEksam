@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,82 +15,115 @@
     <!-- icon libary  -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <ul>
-            <a href="#"><img src="" alt="logo"></a>
+            <a href="#" class="header-logo"><img src="imgs/Logo.svg" alt="logo"></a>
             <li><a href="#">Overblik</a></li>
             <li><a href="#">Funktioner</a></li>
             <li><a href="#">Priser</a></li>
             <li><a href="#">Om os</a></li>
             <li><a href="#">Mere</a></li>
         </ul>
-        <header><h1>Troubleshooting</h1></header>
+        <header>
+            <h1>Troubleshooting</h1>
+        </header>
     </nav>
-    
+
     <!-- 3D Print problemerne -->
     <section class="troubles">
 
-        <button id="lightbox-btn" class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="">
-        </button>    
+        <button id="under-btn" class="troublesContainer">
+            <h4>Under Extruder
+            </h4>
+            <img src="imgs/Under-ekstrudering.jpg" alt="Under-ekstrudering">
+        </button>
 
-        <div id="mylightbox" class="lightbox">
+        <div id="under-ekstrudering" class="lightbox">
 
             <div class="lightbox-content">
                 <span class="close">&times;</span>
-                <h3>Spaghetti</h3>
+                <h3>Under-ekstrudering</h3>
                 <div class="flex">
                     <video src=""></video>
                     <img src="imgs/spaghetti.png" alt="x">
                 </div>
 
                 <div class="info-tekst">
-                    <h4>Tjek varmen på print plade</h4>
-                    <p>De fleste 3D printere kommer efter hånden med en varmeplade.
-                        Denne funktion er vigtig for at print hænger fast på pladen, 
-                        da de fleste overflader som printere kommer med, 
-                        er designet til at holde fast på printet når den er varm, 
-                        og slippe når den er kold. Sørg for at din slicer sætter temperaturen
-                        i dens "start GCODE", og at din printer varmer pladen op før
-                        printer går i gang.</p>   
+                    <h4>Ekstruder multiplikator</h4>
+                    <p>Med en ny printer og/eller en ny slicer profil kan der være indstillinger det skal sættes korrekt
+                        for at undgå under-ekstrudering.
+                        Sliceren skal vide hvor meget filament den skal presse igennem for at holde hotenden fodret
+                        under
+                        printet. Det er et godt sted at starte for at komme af med under-ekstrudering. Indstillingen i
+                        de forskellige slicers kan findes her;.
+                    </p>
+                    <ul>
+                        <li><strong>SimplyPrint slicer:</strong><i>Yderside > Skald print faktor</i></li>
+                        <li><strong>Cura:</strong><i> Custom > Material > Tandhjulet > Flow > Checkboks > Close >
+                                Material > Flow</i></li>
+                        <li><strong>Simplify3D:</strong> <i>Edit process settings > Extruder > Extrusion multiplier</i>
+                        </li>
+                        <li><strong>Prusa slicer:</strong><i>Print settings > Advanced mode > Filament settings >
+                                Extrusion multiplier</i></li>
+                    </ul>
+                    <p>Sæt værdien op med 0.1 og kør et test print og se om det bliver bedre, fortsæt dette indtil
+                        teksturen forsvidner.
+                        Når du op over 1.5 er der nok noget andet galt og du kan prøve at følge løsningerne nede under.
+                    </p>
+                    <h4>
+                        Print hastighed
+                    </h4>
+                    <p>Forskellige printere har forskellige begrænsinger for hvor hurtigt de kan printe uden at støde på
+                        problemer. Mange printere er begænset af hvor meget filament ekstruderen kan skubbe igennem på
+                        et givent tidrum. Prøv at sæt "print hastighed" indstillingen ned i din slicer, og kør et test
+                        print. Løser det ikke problemet kan du prøve de næste løsninger.
+                        "Print hastighed" indstillingen for de forskellige slicere kan findes her;</p>
+                    <ul>
+                        <li><strong>SimplyPrint slicer:</strong><i>Filament > Print hastighed</i></li>
+                        <li><strong>Cura:</strong><i>Custom > Speed > Print speed</i></li>
+                        <li><strong>Simplify3D:</strong><i> Edit process settings > Speeds > Default printing speed</i>
+                        </li>
+                        <li><strong>Prusa slicer:</strong><i>Print settings > Advanced mode > speed > Perimeters</i>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <button id="lightbox-btn-2" class="troublesContainer">
+        <button id="Spaghetti" class="troublesContainer">
             <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="">
-        </button>    
+            <img src="imgs/Spegghti.png" alt="">
+        </button>
 
-        <div id="mylightbox-2" class="lightbox">
+        <div id="spaghetti-btn" class="lightbox">
 
             <div class="lightbox-content">
                 <span class="close-2">&times;</span>
                 <h3>Spaghetti</h3>
                 <div class="flex">
                     <video src=""></video>
-                    <img src="imgs/spaghetti.png" alt="x">
+                    <img src="imgs/Spegghti.png" alt="x">
                 </div>
 
                 <div class="info-tekst">
                     <h4>Tjek varmen på print plade</h4>
                     <p>De fleste 3D printere kommer efter hånden med en varmeplade.
-                        Denne funktion er vigtig for at print hænger fast på pladen, 
-                        da de fleste overflader som printere kommer med, 
-                        er designet til at holde fast på printet når den er varm, 
+                        Denne funktion er vigtig for at print hænger fast på pladen,
+                        da de fleste overflader som printere kommer med,
+                        er designet til at holde fast på printet når den er varm,
                         og slippe når den er kold. Sørg for at din slicer sætter temperaturen
                         i dens "start GCODE", og at din printer varmer pladen op før
-                        printer går i gang.</p>   
+                        printer går i gang.</p>
                 </div>
             </div>
         </div>
 
         <button id="lightbox-btn-3" class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="">
-        </button>    
+            <h4>Overhang</h4>
+            <img src="imgs/overhang.jpg" alt="">
+        </button>
 
         <div id="mylightbox-3" class="lightbox">
 
@@ -104,72 +138,61 @@
                 <div class="info-tekst">
                     <h4>Tjek varmen på print plade</h4>
                     <p>De fleste 3D printere kommer efter hånden med en varmeplade.
-                        Denne funktion er vigtig for at print hænger fast på pladen, 
-                        da de fleste overflader som printere kommer med, 
-                        er designet til at holde fast på printet når den er varm, 
+                        Denne funktion er vigtig for at print hænger fast på pladen,
+                        da de fleste overflader som printere kommer med,
+                        er designet til at holde fast på printet når den er varm,
                         og slippe når den er kold. Sørg for at din slicer sætter temperaturen
                         i dens "start GCODE", og at din printer varmer pladen op før
-                        printer går i gang.</p>   
+                        printer går i gang.</p>
+
                 </div>
             </div>
         </div>
 
 
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Blobs and holes</h4>
+            <img src="imgs/Klatter og huller.jpg" alt="x">
         </button>
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Scars on top of print</h4>
+            <img src="imgs/ridser-på-toppen.png" alt="x">
         </button>
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Warping</h4>
+            <img src="imgs/Loeftet print.png" alt="x">
         </button>
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Pillowing</h4>
+            <img src="imgs/pude effekt.jpg" alt="x">
         </button>
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Gaps between walls</h4>
+            <img src="imgs/Mellemrum mellem vægge.jpg" alt="x">
         </button>
         <button class="troublesContainer">
-            <h4>Spaghetti</h4>
-            <img src="imgs/spaghetti.png" alt="x">
+            <h4>Deformation</h4>
+            <img src="imgs/Deformation.jpg" alt="x">
         </button>
 
     </section>
 
     <section class="faq">
         <h2>FAQ</h2>
-        <button onclick="myFunction" class="faqContainer">
-            <h3>Er det normalt..?</h3>
-            <!-- find unicode hvis vi vil have den pil ned -->
-            <img src="" alt="arrow down">
-        </button>
 
-        <div class="faqContainer">
-            <h3>Er det normalt..?</h3>
-            <!-- find unicode hvis vi vil have den pil ned -->
-            <img src="" alt="arrow down">
-            <div class="faq-info">
-                <p>
-                    det er ikke normalt at...                    
-                </p>
+       <button type="button" class="collapsible">Which printers work with SimplyPrint?</button>
+            <div class="content">
+                <p>By far most 3D printers work with SimplyPrint. The general rule of thumb is; if your printer works with OctoPrint / has a way to plug in a USB cable, it'll work with SimplyPrint.</p>
             </div>
-        </div>
-        <div class="faqContainer">
-            <h3>Er det normalt..?</h3>
-            <!-- find unicode hvis vi vil have den pil ned -->
-            <img src="" alt="arrow down">
-            <div class="faq-info">
-                <p>
-                    det er ikke normalt at...                    
-                </p>
+
+            <button type="button" class="collapsible">Is it secure?</button>
+            <div class="content">
+                <p>Yes. We do everything we can to make SimplyPrint as secure as possible - we take the responsibility that comes with handling something as sensitive as your 3D printer, very seriously.</p>
             </div>
-        </div>
+            <button type="button" class="collapsible">Does my print stop if the internet connection is lost?</button>
+            <div class="content">
+                <p>No, your print won't stop if your printer / Raspberry Pi loses its internet connection. SimplyPrint downloads the GCODE file to the Raspberry Pi so it's stored locally, and therefore won't be affected by your internet being down.</p>
+            </div>
     </section>
 
     <!-- måske er det input i stedet. -->
@@ -183,12 +206,12 @@
 
     <section class="soMe">
         <h6>Try SimplyPrint today.</h6>
-        <div>
-            <a href="#"><img src="" alt="Facebook"></a>
-            <a href="#"><img src="" alt="Youtube"></a>
-            <a href="#"><img src="" alt="Twitter"></a>
-            <a href="#"><img src="" alt="Instagram"></a>
-            <a href="#"><img src="" alt="TikTok"></a>
+        <div class="logoer">
+            <a href="#"><img src="imgs/logo-facebookpng-32247.png" alt="Facebook"></a>
+            <a href="#"><img src="imgs/yt.png" alt="Youtube"></a>
+            <a href="#"><img src="imgs/tw.png" alt="Twitter"></a>
+            <a href="#"><img src="imgs/ig.png" alt="Instagram"></a>
+            <a href="#"><img src="imgs/tiktok.png" alt="TikTok"></a>
         </div>
     </section>
     <footer>
@@ -238,4 +261,5 @@
     <script src="lightbox.js"></script>
     <script src="script.js" defer></script>
 </body>
+
 </html>

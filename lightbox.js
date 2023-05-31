@@ -1,73 +1,23 @@
-// Get the modal
-var modal = document.getElementById("mylightbox");
+// henter modal effekten / elementet
+var modal = document.getElementById("under-ekstrudering");
 
-// Get the button that opens the modal
-var btn = document.getElementById("lightbox-btn");
+// Henter knappens ID som skal åbne modal effekten
+var btn = document.getElementById("under-btn");
 
-// Get the <span> element that closes the modal
+// Bruger Span elementet som skal lukke modal boxen
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// Når man klikker på elementet, åbner effekten.
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren klikker på (x) lukker boxen ned
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-var modal = document.getElementById("mylightbox-2");
-
-// Get the button that opens the modal
-var btn = document.getElementById("lightbox-btn-2");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-2")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-var modal = document.getElementById("mylightbox-3");
-
-// Get the button that opens the modal
-var btn = document.getElementById("lightbox-btn-3");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-3")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
+// Når brugeren klikker uden om modal boxen, lukkes den ned.
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

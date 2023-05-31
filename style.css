@@ -1,51 +1,77 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     text-decoration: none;
     color: black;
+    overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-:root{
+
+:root {
     --lightblue-color: #29abe2;
     --deepblue-color: #1D30B8;
     --borderRadius: 10px;
 }
-nav{
+
+.header-logo {
+    text-align: center;
+}
+
+nav {
     background-image: linear-gradient(30deg, var(--lightblue-color), var(--deepblue-color));
     padding: 1em;
     font-size: 14pt;
+   width: 100%;
 }
-nav ul{
+
+nav img {
+    width: 10%;
+}
+
+nav ul {
     margin-top: 1em;
 }
-nav li{
+
+nav ul img {
+    margin-top: 1em;
+}
+
+nav li {
     display: inline;
 }
-nav a{
+
+nav a {
     color: white;
     margin: 1em;
+    width: 100%;
 }
-nav header{
+
+nav header {
     text-align: center;
     margin: 0.5em;
     margin-bottom: 1.5em;
 }
-nav header h1{
+
+nav header h1 {
     color: white;
     font-weight: bold;
     font-size: 30pt;
+    margin-top: 1em;
 }
-/* brugt i javascript */
-.show{display: block;}
 
-.troubles{
+/* brugt i javascript */
+.show {
+    display: block;
+}
+
+.troubles {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 2em 6vw;
 }
 
-.troublesContainer{
+.troublesContainer {
     background-color: white;
     border: none;
     margin: 1em;
@@ -56,56 +82,76 @@ nav header h1{
     font-size: 30pt;
     box-shadow: 0 2px 10px #161c4b;
     cursor: pointer;
+    width: 25%;
+    max-width: 50%;
 }
 
-.troublesContainer h4{
+.troublesContainer h4 {
     position: relative;
     transform: translateY(-1em);
     font-weight: 600;
 }
 
-.faq h2{font-size: 36pt;}
-.faq{
+.troublesContainer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.faq h2 {
+    font-size: 36pt;
+    margin-bottom: 30px;
+}
+
+.faq {
     margin-left: 6vw;
     margin-right: 6vw;
 }
 
-.faqContainer{
+.faqContainer {
     padding: 1.5em;
     margin: 1em 0;
     border: 1px solid black;
     border-radius: var(--borderRadius);
 }
-.faq-info{
+
+.faq-info {
     display: block;
 }
 
-.soMe{
+.soMe {
     background-color: #5991FB;
-    margin-top: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
-.soMe a{
+
+.soMe a {
     display: inline;
     margin-left: 2em;
 }
-.soMe h6{
+
+.soMe h6 {
     color: white;
+    margin-bottom: 3em;
+    margin-left: 3em;
 }
 
-footer{
+footer {
     display: flex;
     font-weight: 300;
 }
-.footerCentering{
+
+.footerCentering {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
 }
-.footerHeader{
+
+.footerHeader {
     margin: 3em;
 }
-footer h3{
+
+footer h3 {
     text-decoration: underline;
     text-decoration-color: var(--lightblue-color);
     text-underline-offset: 1em;
@@ -113,20 +159,24 @@ footer h3{
     color: #4F4F4F;
     font-weight: 600;
 }
+
 footer div {
     margin: 1em 0;
 }
-footer div a{
+
+footer div a {
     color: var(--lightblue-color);
 }
-.copyright{
+
+.copyright {
     font-size: 14pt;
     padding: 1em;
     text-align: center;
     background-color: #BDBFC1;
     color: #E2E2DE;
 }
-.copyright span{
+
+.copyright span {
     color: white;
 }
 
@@ -134,110 +184,178 @@ footer div a{
 
 
 .lightbox {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .lightbox-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.lightbox-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 10% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
     width: 80%;
-  }
+}
 
-  .lightbox-content h3 {
+.lightbox-content h3 {
     display: flex;
     justify-content: center;
     font-size: 50px;
     margin-bottom: 50px;
     margin-top: 30px;
-  }
+}
 
-  .lightbox-content h4 {
+.lightbox-content h4 {
     font-size: 24px;
-  }
+}
 
-  .lightbox-content p {
+.lightbox-content p {
     width: 50%;
     margin-top: 30px;
     font-size: 18px;
-  }
+}
 
-  .flex img{
-    height: 40%;
-    width: 45%;
+
+.flex img {
+    height: 30%;
+    width: 30%;
     object-fit: cover;
-  }
+    float: right;
+    margin-right: 30px;
+}
 
-  .flex video {
+.flex video {
     width: 45%;
-  }
+}
 
 .info-tekst {
     padding-left: 20px;
     margin-bottom: 50px;
 }
 
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.info-tekst h4 {
+    margin-top: 30px;
+}
 
-  .close-2 {
+.info-tekst ul {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close-2:hover,
-  .close-2:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+.close-2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-2:hover,
+.close-2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .close-3 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close-3:hover,
-  .close-3:focus {
+}
+
+.close-3:hover,
+.close-3:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* kode fundet fra w3 school */
+
+.collapsible {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    
+  }
+  
+  .active:after {
+   
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
 
+.logoer img{
+    max-width: 3%;
+    height: 5%;
+}
 
 
 @media screen and (max-width:800px) {
-    .troublesContainer{
+    .troublesContainer {
         padding: 100px;
     }
 }
