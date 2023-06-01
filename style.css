@@ -7,6 +7,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 :root {
     --lightblue-color: #29abe2;
     --deepblue-color: #1D30B8;
@@ -238,12 +239,12 @@ footer div a {
     height: 30%;
     width: 30%;
     object-fit: cover;
-    float: right;
-    margin-right: 30px;
+     
+    margin-left: 200px;
 }
 
 .flex video {
-    width: 45%;
+    margin-left: 60px;
 }
 
 .info-tekst {
